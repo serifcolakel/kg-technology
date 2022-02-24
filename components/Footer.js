@@ -5,9 +5,8 @@ import React, { useEffect } from "react";
 import ResponseMenu from "./ResponseMenu";
 import { data } from "./Data";
 export default function Footer() {
-  console.log(data);
   const [windowWidth, setWindowWidth] = React.useState(0);
-  console.log(windowWidth);
+
   useEffect(() => {
     setWindowWidth(window.innerWidth);
   }, [windowWidth]);
