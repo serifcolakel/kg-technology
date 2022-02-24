@@ -1,46 +1,12 @@
 import React from "react";
 import Link from "next/link";
+import { data } from "../Data";
 import { MdMenuOpen } from "react-icons/md";
+import ResponseMenu from "../ResponseMenu";
+import { calismaModelleriAltLink, hakkimizdaAltLink, navLink } from "../Data";
 export default function Header({ show }) {
-  const navLink = [
-    { name: "Anasayfa", url: "/" },
-    {
-      name: "Hakkımızda",
-      url: "/",
-    },
-    {
-      name: "Çalışma Modelleri",
-      url: "/",
-    },
-    { name: "Ar&Ge Projemiz", url: "/arge-projelerimi" },
-    { name: "Referanslar", url: "/referanslar" },
-  ];
-  const hakkimizdaAltLink = [
-    { name: "Yazılım Geliştirme", url: "/yazilim-gelistirme" },
-    { name: "Test Mühendisliği", url: "/test-mühendisliği" },
-    { name: "İş ve Sistem Analizi", url: "/is-sistem-analizi" },
-    { name: "Proje Yönetimi", url: "/proje-yonetimi" },
-
-    { name: "Operasyon Destek", url: "/operasyon-destek" },
-    {
-      name: "Sürüm - Konfigürasyon Yönetimi",
-      url: "/surum-konfigurasyon-yonetimi",
-    },
-    { name: "Kurumsal Mimari", url: "/kurumsal-mimari" },
-
-    { name: "Sistem Entegrasyon", url: "/sistem-entegrasyon" },
-  ];
-  const calismaModelleriAltLink = [
-    {
-      name: "KPI Bazlı Yönetilen Hizmetler",
-      url: "/kpi-bazli-yonetilen-hizmetler",
-    },
-    { name: "Proje Bazlı Hizmetler", url: "/proje-bazli-hizmetler" },
-    { name: "Dış Kaynak Hizmetleri", url: "/dis-kaynak-hizmetleri" },
-    { name: "Danışmanlık", url: "/danismanlik" },
-  ];
   let mainClassName =
-    "absolute w-full md:px-6 px-2 top-0 z-50 flex flex-row items-center justify-between";
+    "absolute w-full md:px-6 px-4 top-0 z-50 flex flex-row items-center justify-between";
   if (!show) {
     mainClassName += " bg-[#383838]";
   }
@@ -48,6 +14,7 @@ export default function Header({ show }) {
     first: false,
     second: false,
   });
+  const [showResponsiveMenu, setShowResponsiveMenu] = React.useState(false);
 
   return (
     <div className={mainClassName}>
@@ -102,14 +69,36 @@ export default function Header({ show }) {
             )}
           </div>
         ))}
-
         <button className="text-orange-500 border-[1px] bg-black px-4 py-2">
           Daha Fazlası
         </button>
       </div>
-      <div className="md:hidden text-white block">
+      <div
+        onClick={() => setShowResponsiveMenu(!showResponsiveMenu)}
+        className="md:hidden text-white block"
+      >
         <MdMenuOpen size={30} />
       </div>
+      {showResponsiveMenu && (
+        <div className="fixed inset-0 w-full flex flex-row h-[100vh] text-white z-50">
+          <div
+            className="bg-black bg-opacity-30 w-[15%] h-[100vh]"
+            onClick={() => setShowResponsiveMenu(!showResponsiveMenu)}
+          />
+          <div className="w-[85%] h-[100vh] bg-black">
+            <Link href="/">
+              <a>
+                <img
+                  src="http://www.kgteknoloji.com/images/logo.png"
+                  alt="logo"
+                  className="md:w-[375px] md:h-[75px] w-[135px] h-12 object-contain  mx-auto my-2"
+                />
+              </a>
+            </Link>
+            <ResponseMenu data={data.content} gap=" p-4" />
+          </div>
+        </div>
+      )}
     </div>
   );
 }

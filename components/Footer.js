@@ -1,68 +1,11 @@
-import { Transition } from "@tailwindui/react";
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
-
-import { BsChevronUp, BsChevronDown } from "react-icons/bs";
 import React, { useEffect } from "react";
-const data = {
-  links: [
-    {
-      webUrl: "/",
-      imgUrl: "http://www.kgteknoloji.com/images/logo.png",
-    },
-  ],
-  content: [
-    {
-      title: "Hakkımızda",
-      rows: [
-        { title: "Yazılım Geliştirme", titleUrl: "/yazilim-gelistirme" },
-        { title: "Test Mühendisliği", titleUrl: "/test-mühendisliği" },
-        { title: "İş ve Sistem Analizi", titleUrl: "/is-sistem-analizi" },
-        { title: "Proje Yönetimi", titleUrl: "/proje-yonetimi" },
-
-        { title: "Operasyon Destek", titleUrl: "/operasyon-destek" },
-        {
-          title: "Sürüm - Konfigürasyon Yönetimi",
-          titleUrl: "/surum-konfigurasyon-yonetimi",
-        },
-        { title: "Kurumsal Mimari", titleUrl: "/kurumsal-mimari" },
-
-        { title: "Sistem Entegrasyon", titleUrl: "/sistem-entegrasyon" },
-      ],
-    },
-    {
-      title: "Çalışma Modelleri",
-      rows: [
-        {
-          title: "KPI Bazlı Yönetilen Hizmetler",
-          titleUrl: "/kpi-bazli-yonetilen-hizmetler",
-        },
-        { title: "Proje Bazlı Hizmetler", titleUrl: "/proje-bazli-hizmetler" },
-        { title: "Dış Kaynak Hizmetleri", titleUrl: "/dis-kaynak-hizmetleri" },
-        { title: "Danışmanlık", titleUrl: "/danismanlik" },
-      ],
-    },
-    {
-      title: "Bize Ulaşın",
-      rows: [
-        {
-          title: "İletişim",
-          titleUrl: "/iletisim",
-        },
-        {
-          title: "Referanslar",
-          titleUrl: "/referanslar",
-        },
-        {
-          title: "İnsan Kaynakları",
-          titleUrl: "/ik",
-        },
-      ],
-    },
-  ],
-};
+import ResponseMenu from "./ResponseMenu";
+import { data } from "./Data";
 export default function Footer() {
+    console.log(data)
   const [windowWidth, setWindowWidth] = React.useState(0);
   console.log(windowWidth);
   useEffect(() => {
@@ -86,7 +29,7 @@ export default function Footer() {
               ))}
             </div>
             {windowWidth < 400 ? (
-              <Mobile data={data.content} />
+              <ResponseMenu data={data.content} />
             ) : (
               <NotMobile data={data.content} />
             )}
@@ -136,42 +79,6 @@ export default function Footer() {
         </div>
       </div>
     </div>
-  );
-}
-function Mobile(props) {
-  const [openedTab, setOpenedTab] = React.useState(0);
-  const datas = props.data;
-  return (
-    <>
-      {datas.map((x, i) => (
-        <div className="grid" key={i}>
-          <div className="flex justify-between" onClick={() => setOpenedTab(i)}>
-            <span className="font-normal text-x hover:text-primary">
-              {x.title}
-            </span>
-            <div className="bg-primary rounded-lg flex items-center px-2">
-              {i === openedTab ? <BsChevronDown /> : <BsChevronUp />}
-            </div>
-          </div>
-          <Transition
-            show={i === openedTab}
-            enter="transition duration-1000 ease-out"
-            enterFrom="transform scale-95 opacity-0"
-            enterTo="transform scale-100 opacity-100"
-            leave="transition duration-75 ease-out"
-            leaveFrom="transform scale-100 opacity-100"
-            leaveTo="transform scale-95 opacity-0"
-          >
-            {i === openedTab &&
-              x.rows.map((r, j) => (
-                <a href={r.titleUrl} key={j} rel="noreferrer" target="_blank">
-                  <p className="text-sm	hover:text-orange-500">{r.title}</p>
-                </a>
-              ))}
-          </Transition>
-        </div>
-      ))}
-    </>
   );
 }
 

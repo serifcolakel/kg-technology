@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import styles from "../../styles/Home.module.scss";
 import "slick-carousel/slick/slick-theme.css";
+import { SliderData } from "../Data";
 import { MdArrowForwardIos, MdOutlineArrowBackIos } from "react-icons/md";
 
 export default function Sliders({ show }) {
@@ -79,17 +80,10 @@ export default function Sliders({ show }) {
       },
     ],
   };
-  const sablon = [
-    { imgUrl: "https://i.hizliresim.com/fsl8pxq.jpg" },
-    { imgUrl: "https://i.hizliresim.com/hrsqe72.jpg" },
-    { imgUrl: "https://i.hizliresim.com/10i0fm1.jpg" },
-    { imgUrl: "https://i.hizliresim.com/1cea1kp.jpg" },
-    { imgUrl: "https://i.hizliresim.com/gf0k74t.jpg" },
-    { imgUrl: "https://i.hizliresim.com/9wrd65l.jpg" },
-  ];
+
   return (
     <Slider {...settings}>
-      {sablon.map((card, index) => (
+      {SliderData.map((card, index) => (
         <div key={index} className={styles.slider}>
           <div className={styles.sliderText}>
             <img

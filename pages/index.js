@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 import Link from "next/link";
 import Content from "../components/content/";
 import Footer from "../components/Footer";
@@ -40,7 +39,7 @@ export default function Home() {
             </a>
           </Link>
           <p className="md:w-[20%] text-center ">
-            <span className="text-blue-500">Adres : </span>KOLEKTİF HOUSE
+            <span className="text-primary">Adres : </span>KOLEKTİF HOUSE
             ATAŞEHİR- Barbaros Mah.Begonya Sk.No:1/2 Nida Kule Batı Ataşehir
           </p>
 
@@ -48,7 +47,7 @@ export default function Home() {
             href="tel:+90 0533 210 34 05"
             className="md:w-[15%] text-center hover:text-orange-500"
           >
-            <span className="text-blue-500">Telefon : </span>
+            <span className="text-primary">Telefon : </span>
             +90 0533 210 34 05
           </a>
         </div>

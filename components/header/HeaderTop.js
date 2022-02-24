@@ -1,11 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { AiFillLinkedin } from "react-icons/ai";
-const links = [
-  { name: "Hakkımızda", href: "/hakkimizda" },
-  { name: "İK", href: "/ik" },
-  { name: "İletişim", href: "/iletisim" },
-];
+import { links } from "../Data";
 export default function HeaderTop() {
   return (
     <div className="bg-[#f7941e] flex flex-row items-center justify-end w-full h-7">
