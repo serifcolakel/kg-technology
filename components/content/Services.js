@@ -4,12 +4,12 @@ import React from "react";
 export default function Services({ obj }) {
   return (
     <div className="md:absolute md:top-0 h-[600px] md:h-full right-40 w-full text-center md:w-[50%] md:pt-0 pt-4 flex flex-col items-center gap-y-8 md:justify-around md:py-8">
-      <h1 className="text-2xl font-extrabold text-blue-600 ">
+      <h1 className="text-2xl font-extrabold text-primary ">
         {services[obj].name}
       </h1>
       <p className="text-gray-400"> {services[obj].description}</p>
       <Link href={services[obj].url}>
-        <a className="bg-white border-2 text-blue-500 border-blue-500 rounded-lg px-4 py-2 hover:bg-blue-500 hover:border-white hover:text-white">
+        <a className="bg-white border-2 text-primary border-primary rounded-lg px-4 py-2 hover:bg-primary hover:border-white hover:text-white">
           Detaylı Bilgi
         </a>
       </Link>

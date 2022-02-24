@@ -3,7 +3,7 @@ import React from "react";
 export default function References() {
   return (
     <div className="flex flex-col gap-y-4 py-8 p-4">
-      <h1 className="text-center text-3xl font-bold text-blue-500 hover:text-orange-400  cursor-pointer ">
+      <h1 className="text-center text-3xl font-bold text-primary  cursor-pointer ">
         Referanslarımız
       </h1>
       <div className="w-full md:w-[60%] mx-auto grid grid-cols-2 md:grid-cols-4 md:gap-4 gap-x-8 bg-white">

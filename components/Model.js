@@ -8,7 +8,7 @@ export default function Model() {
       <img
         src="http://www.kgteknoloji.com/images/img/calisma-modeli.png"
         alt="hcg"
-        className="w-[50%] h-[120px] mx-auto object-contain"
+        className="w-full md:w-[50%] h-[120px] mx-auto object-contain px-4"
       />
       <div className="grid grid-cols-1 md:grid-cols-4 w-full p-4 md:w-[70%] gap-4 mx-auto">
         {model.map((item, index) => (
