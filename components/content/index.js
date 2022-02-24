@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "../../styles/Home.module.scss";
 import { SiMinetest } from "react-icons/si";
 import { GiCircuitry } from "react-icons/gi";
@@ -13,8 +13,8 @@ import {
 } from "react-icons/md";
 import Services from "./Services";
 import Content from "./Content";
-export default function index() {
-  const [services, setServices] = React.useState("1");
+export default function Home() {
+  const [services, setServices] = useState("1");
   return (
     <div className={styles.content}>
       <Content />
