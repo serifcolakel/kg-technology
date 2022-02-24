@@ -13,7 +13,7 @@ export const navLink = [
 ];
 export const hakkimizdaAltLink = [
   { name: "Yazılım Geliştirme", url: "/yazilim-gelistirme" },
-  { name: "Test Mühendisliği", url: "/test-mühendisliği" },
+  { name: "Test Mühendisliği", url: "/test-muh" },
   { name: "İş ve Sistem Analizi", url: "/is-sistem-analizi" },
   { name: "Proje Yönetimi", url: "/proje-yonetimi" },
   { name: "Operasyon Destek", url: "/operasyon-destek" },
@@ -43,7 +43,7 @@ export const services = [
   },
   {
     name: "Test Mühendisliği",
-    url: "/test-mühendisliği",
+    url: "/test-muh",
     description:
       "KG Teknoloji’de iş analistleri, müşteri ile yazılım mühendisleri arasında köprü oluşturur. Analistler, müşterilerin süreçlerini belli metotlar aracılığıyla ayrıntılı şekilde inceleyip yazılım ekibiyle koordine bir şekilde kurumların fonksiyonel ihtiyaçlarına ulaşmalarını sağlarlar. Bunların yanı sıra iş analistlerimiz hızlı ve çözüm odaklı yaklaşımlarla iletişimi sürekli canlı tutarak sürecin hatasız bir şekilde yürümesine olanak tanırlar. Sürecin dökümantasyonu, takibi gibi tüm projeyi etkileyecek kritik unsurları hassasiyetle yürütürler.",
   },
@@ -113,7 +113,7 @@ export const data = {
       title: "Hakkımızda",
       rows: [
         { title: "Yazılım Geliştirme", titleUrl: "/yazilim-gelistirme" },
-        { title: "Test Mühendisliği", titleUrl: "/test-mühendisliği" },
+        { title: "Test Mühendisliği", titleUrl: "/test-muh" },
         { title: "İş ve Sistem Analizi", titleUrl: "/is-sistem-analizi" },
         { title: "Proje Yönetimi", titleUrl: "/proje-yonetimi" },
 

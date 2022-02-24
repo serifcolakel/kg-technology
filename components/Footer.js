@@ -89,7 +89,7 @@ function NotMobile(props) {
         <div className="flex flex-col gap-y-2 px-8" key={index}>
           <span className="font-bold text-xl">{data.title}</span>
           {data.rows.map((item, idx) => (
-            <a href={item.titleUrl} key={idx} rel="noreferrer" target="_blank">
+            <a href={item.titleUrl} key={idx} rel="noreferrer">
               <p className="text-sm	hover:text-orange-500">{item.title}</p>
             </a>
           ))}

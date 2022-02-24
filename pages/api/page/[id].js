@@ -14,11 +14,12 @@ let pages = [
   {
     type: 1,
     name: "Test Mühendisliği",
-    url: "/test-mühendisliği",
-    imgUrl: "http://www.kgteknoloji.com/images/img/test-muhendisligi.png",
-    html: `<p>Test mühendislerimiz, müşteri taleplerinin sorunsuz bir şekilde karşılanması için projenin en başından itibaren süreçte aktif bir şekilde yer alır. Geliştirilen yazılımı, müşterinin kurumsal gereksinimlerine uygun olup olmadığı ekseninde detaylı bir şekilde inceler. Farklı sektörlerde uzmanlaşmış ekibimiz projenin iş ihtiyaçlarıyla uyumunu HP Quality Center, bugzilla, IBM rational suite Clearquest gibi test servis araçlarını kullanarak ölçer ve test senaryoları yazarak gereksinimlere uçtan uca cevap verir. KG Teknoloji, kendi test ekiplerinize dışarıdan destek de sağlar.</p> 
+    url: "/test-muh",
+    html: `
+    <p>Test mühendislerimiz, müşteri taleplerinin sorunsuz bir şekilde karşılanması için projenin en başından itibaren süreçte aktif bir şekilde yer alır. Geliştirilen yazılımı, müşterinin kurumsal gereksinimlerine uygun olup olmadığı ekseninde detaylı bir şekilde inceler. Farklı sektörlerde uzmanlaşmış ekibimiz projenin iş ihtiyaçlarıyla uyumunu HP Quality Center, bugzilla, IBM rational suite Clearquest gibi test servis araçlarını kullanarak ölçer ve test senaryoları yazarak gereksinimlere uçtan uca cevap verir. KG Teknoloji, kendi test ekiplerinize dışarıdan destek de sağlar.</p> 
     <p>Deneyimli test mühendislerimiz, projenin akış sürecine uygun olmayan bir hata buldukları takdirde bunu ilgili kişiye bildirerek düzeltilmesini sağlarlar. Böylece işlem daha sağlıklı bir şekilde yürür. Test senaryoları oluşturularak beklenen sonuçlarla yapılan analizin uyumlu hale gelmesi için geliştirme süreci sonuna kadar takip edilir. Bu işlemleri yaparken en son teknolojiyle geliştirilen araçlar kullanılır. Dikkatli, titiz, sorumluluk sahibi, iletişim yeteneği kuvvetli ve analitik zekaya sahip test mühendislerimiz, proje yönetim sürecinin en hassas noktalarından birini oluşturur. Temel işlerinin yanında performans testi, uygunluk testi gibi birçok etap ile de yazılım programınızın bir anlamda “sağlamasını” yaparak kurumunuzun ihtiyacı olduğu hizmeti sorunsuz bir şekilde alabilmesi için takibi son aşamaya kadar bırakmaz.</p>
     `,
+    imgUrl: "http://www.kgteknoloji.com/images/img/test-muhendisligi.png",
   },
   {
     type: 1,
@@ -72,6 +73,16 @@ let pages = [
   },
   {
     type: 1,
+    name: "İletişim",
+    url: "/iletisim",
+    html: ` <p>KG Teknoloji olarak mevcut sistemlerin ve projelerin portföyünü çıkartmak, projelerde üst seviye tasarım yaratmak, stratejik planlamayı doğru bir şekilde yapmak, BT altyapısına yön vermek, projelerin yazılım aşamasında ve etkileşim noktalarında meydana gelebilecek problemlerde tasarım ekibine liderlik etmek gibi ihtiyaçlarınıza kendi mimari ekiplerinize dışarıdan destek sağlarız.</p>
+  <p>Yazılımın bu aşamasında da profesyonel kadromuzun yaptığı analizler ve planlama sürecinin sonunda ortaya çıkan görünüm ve akış ile ürünün yazılım anlamında mimarisini oluşturmak üzere yola çıkarız. Kullanım kolaylığı, fonksiyonellik, esneklik, bakım kolaylığı ve güvenilirlik, tasarım sürecinde en çok önem verdiğimiz unsurlar arasında öncelikli olarak yer alır. Bir sistemin varlığının en başından itibaren doğru seçimlerle var olduğunu unutmadan gerçekçi çözümlerle, kullanılacak teknolojilere ve yazılım mimarisine karar veririz. Uzmanlarımız bir projeyi kodlarken gelişen teknolojilerle entegrasyonuna, genişletilebilir özellikler taşımasına ve geliştirilebilir olmasına karşın oldukça hassas davranırlar. </p>
+  <p>Yazılım geliştirme sürecinin temel taşlarından olan mimari konusunda KG Teknoloji olarak bütünlük içinde bir plan çıkardıktan sonra belirlediğimiz noktaları detaylandırarak incelikli bir çalışma yürütmek prensiplerimizdendir. </p>
+`,
+    imgUrl: "http://www.kgteknoloji.com/images/img/kurumsal-mimari.png",
+  },
+  {
+    type: 1,
     name: "Sistem Entegrasyon",
     url: "/sistem-entegrasyon",
     html: `<p>KG Teknoloji, kurumunuzda halihazırda kullanmakta olduğunuz “middleware” bir diğer deyişle ara katman yazılımları üzerinden hizmet sağlayan Oracle, Tibco gibi farklı platformlarda, tecrübeli uzman kadrosu ile sistem entegrasyon hizmeti verir. Bu hizmet, ihtiyaçlarınız için komple veya kendi ara katman ekiplerinize dışarıdan destek olarak sağlanır. </p>
@@ -104,7 +115,7 @@ let pages = [
     name: "Dış Kaynak Hizmetleri",
     url: "/dis-kaynak-hizmetleri",
     html: `<p>BT alanında yeniliklerin öncüsü haline gelen KG Teknoloji olarak kurumunuzun kaynak ihtiyaçlarıyla uyumlu şekilde kendi analiz, tasarım, mimari, yazılım, test ve operasyon ekiplerinize dönemsel veya uzun süreli ihtiyaç duyduğunuz uzman ve yetkin dış kaynakları sağlarız. Profesyonel kadromuzla verdiğimiz dış kaynak hizmetleri şirketinize artı değer katarken motive edici değişiklikler de gözlenir. Bilgi teknolojileri çözüm sağlayıcısı olarak esneklik ve geliştirilebilirlik sunar, ayrıca iş ortaklarının güvenliğini ve gizliliğini de koruma altına alır.</p>`,
-    imgUrl: "http://www.kgteknoloji.com/images/img/dis-kaynak-hizmetleri.png",
+    imgUrl: "http://www.kgteknoloji.com/images/img/proje-bazli-hizmetler.png",
   },
   {
     type: 2,
@@ -126,4 +137,3 @@ export default function handler(req, res) {
     res.status(404).json({ error: "Page not found" });
   }
 }
-

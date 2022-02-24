@@ -21,6 +21,7 @@ export default function Header({ show, position }) {
   const [showResponsiveMenu, setShowResponsiveMenu] = React.useState(false);
   const router = useRouter();
   const page = router.pathname === "/";
+
   return (
     <div className={mainClassName}>
       <Link href="/">
@@ -45,15 +46,31 @@ export default function Header({ show, position }) {
                 : null
             }
           >
-            <p
-              className={
-                index === 0 && page
-                  ? "text-primary cursor-pointer md:block hidden text-base font-normal px-4  border-r-[1px] border-white "
-                  : "text-white cursor-pointer hover:text-orange-500 md:block hidden text-base font-normal px-4  border-r-[1px] border-white "
-              }
-            >
-              {item.name}
-            </p>
+            {index === 1 || index === 2 ? (
+              <p
+                className={
+                  index === 0 && page
+                    ? "text-primary  cursor-pointer hidden text-base font-normal px-4  border-r-[1px] border-white "
+                    : "text-white cursor-pointer hover:text-orange-500 md:block hidden text-base font-normal px-4  border-r-[1px] border-white "
+                }
+              >
+                {item.name}
+              </p>
+            ) : (
+              <Link href={item.url}>
+                <a
+                  className={
+                    index === 0 && page
+                      ? "text-primary cursor-pointer md:block hidden text-base font-normal px-4  border-r-[1px] border-white "
+                      : index === 4 && !page
+                      ? "text-white cursor-pointer hover:text-orange-500 hidden text-base font-normal px-4  border-r-[1px] border-white "
+                      : "text-white cursor-pointer hover:text-orange-500 md:block hidden text-base font-normal px-4  border-r-[1px] border-white "
+                  }
+                >
+                  {item.name}
+                </a>
+              </Link>
+            )}
 
             {index === 1 && showMenu.first && (
               <div className="text-blue-900 p-2 absolute -left-2 top-8 bg-white gap-2 rounded-xl grid grid-cols-2 w-[400px]">

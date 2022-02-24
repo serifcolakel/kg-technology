@@ -49,7 +49,7 @@ function DynamicPage({ data }) {
 DynamicPage.getInitialProps = async (ctx) => {
   // /id alabilmek için kullanıldi.
   // sayfa renderlanmadan önce veri çekmeden önce sayfa yoluyla veri çekmek gerekli.
-  //
+
   try {
     const request = await axios.get(
       process.env.NEXT_PUBLIC_API_URL + `/page/${ctx.query.id}`
