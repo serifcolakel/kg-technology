@@ -4,7 +4,7 @@ import HeaderTop from "./HeaderTop";
 import styles from "../../styles/Home.module.scss";
 import Header from "./Header";
 import { useRouter } from "next/router";
-export default function index() {
+export default function Home() {
   const router = useRouter();
   const show = router.pathname === "/";
 
