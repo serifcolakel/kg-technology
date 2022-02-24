@@ -1,0 +1,90 @@
+@import "./veriables", "./breakpoints", "./mixins", "./content", "./model";
+.slick-dots {
+  background-color: $error;
+  bottom: -50px;
+  @include md {
+    bottom: -50px;
+  }
+}
+.sliders {
+  width: 100%;
+  position: relative;
+  @include md {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .slider {
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    @include flexCenter(row, center, center);
+    // gradient color for background
+
+    .sliderText {
+      @include flexCenter(row, flex-start);
+      gap: 30px;
+      .sliderImg {
+        width: 100%;
+        background-color: #fff;
+        height: 320px;
+        gap: 0 !important;
+        object-fit: cover;
+        cursor: pointer;
+        margin-right: -50px;
+        @include md {
+          height: 520px;
+          gap: 0 !important;
+        }
+      }
+
+      .userIcon {
+        width: 80px;
+        height: 80px;
+        background-color: #fff;
+        border-radius: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+  .sliderIconNext,
+  .sliderIconPrev {
+    color: $gray;
+
+    cursor: pointer;
+  }
+  .sliderIconNext:hover,
+  .sliderIconPrev:hover {
+    color: $white;
+  }
+  .sliderIconPrev {
+    position: absolute;
+    top: 0;
+    width: 20%;
+    &:hover {
+      background-image: -webkit-linear-gradient(
+        right,
+        rgba(0, 0, 0, 0.0001) 0,
+        rgba(0, 0, 0, 0.5) 100%
+      );
+    }
+    z-index: 20;
+    height: 99%;
+    left: 0;
+  }
+  .sliderIconNext {
+    position: absolute;
+    &:hover {
+      background-image: -webkit-linear-gradient(
+        left,
+        rgba(0, 0, 0, 0.0001) 0,
+        rgba(0, 0, 0, 0.5) 100%
+      );
+    }
+    top: 0;
+    width: 20%;
+    z-index: 20;
+    height: 99%;
+    right: 0;
+  }
+}
