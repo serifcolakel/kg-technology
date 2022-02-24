@@ -14,9 +14,9 @@ export default function Card({
     <div
       className={
         buttonShow
-          ? "flex flex-col gap-y-4 md:h-[550px] shadow-2xl rounded-xl p-4 bg-white" +
+          ? "flex flex-col gap-y-4 md:h-[480px] shadow-2xl rounded-xl p-4 bg-white" +
             top
-          : "flex flex-col gap-y-4 md:h-[450px] shadow-2xl rounded-xl p-4 bg-white " +
+          : "flex flex-col gap-y-4 md:h-[380px] shadow-2xl rounded-xl p-4 bg-white " +
             top
       }
     >
@@ -27,7 +27,7 @@ export default function Card({
       />
 
       {buttonShow && (
-        <p className="text-center text-orange-500 ">
+        <p className="text-center text-primary ">
           #<span className="text-black">{subtitle}</span>
         </p>
       )}
@@ -35,20 +35,20 @@ export default function Card({
       <p
         className={
           buttonShow
-            ? "font-bold text-orange-500 text-center  w-full mx-auto "
-            : "font-bold text-orange-500 text-center  w-[70%] mx-auto  animate-bounce"
+            ? "font-bold text-primary text-center  text-lg w-full mx-auto "
+            : "font-bold text-primary text-center text-lg  w-[70%] mx-auto"
         }
       >
         {title}
       </p>
-      <p className="text-center text-gray-700 font-mono">
+      <p className="text-center text-gray-700 font-mono line-clamp-6">
         {description === undefined
           ? "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing"
           : description.slice(0, 200) + "..."}
       </p>
       {buttonShow && (
         <Link href={url}>
-          <a className="bg-white border-2 text-blue-500 mx-auto border-blue-500 rounded-lg px-4 py-2 hover:bg-blue-500 hover:border-white hover:text-white">
+          <a className="bg-white border-2 text-primary mx-auto border-primary rounded-lg px-4 py-2 hover:bg-primary hover:border-white hover:text-white">
             Detaylı Bilgi
           </a>
         </Link>

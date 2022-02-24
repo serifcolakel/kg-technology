@@ -40,7 +40,7 @@ export default function Header({ show }) {
     { name: "Danışmanlık", url: "/danismanlik" },
   ];
   let mainClassName =
-    "absolute w-full md:px-6 px-10 top-0 z-50 flex flex-row items-center justify-between";
+    "absolute w-full md:px-6 px-2 top-0 z-50 flex flex-row items-center justify-between";
   if (!show) {
     mainClassName += " bg-[#383838]";
   }
@@ -49,7 +49,6 @@ export default function Header({ show }) {
     second: false,
   });
 
-  console.log(showMenu.first, showMenu.second);
   return (
     <div className={mainClassName}>
       <Link href="/">
@@ -57,7 +56,7 @@ export default function Header({ show }) {
           <img
             src="http://www.kgteknoloji.com/images/logo.png"
             alt="logo"
-            className="md:w-[375px] md:h-[75px] w-[135px] h-12 object-contain"
+            className="md:w-[375px] md:h-[75px] w-[135px] h-12 object-contain my-2"
           />
         </a>
       </Link>

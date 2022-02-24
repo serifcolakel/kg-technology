@@ -98,7 +98,7 @@ export default function Footer() {
             <ul className="list-disc">
               <li>
                 <a href="/" target="_blank" rel="noreferrer">
-                  <span className="font-normal hover:text-orange-500 text-sm ">
+                  <span className="font-normal hover:text-primary-200 text-primary text-sm ">
                     Bilgi Toplumu Hizmetleri
                   </span>
                 </a>
@@ -107,7 +107,7 @@ export default function Footer() {
           </div>
           <div className="flex flex-row md:gap-x-4 ">
             <a
-              className="hover:text-orange-500 text-blue-500 p-2"
+              className="hover:text-primary-200 text-primary p-2"
               href="https://www.instagram.com/kgteknoloji"
               target="_blank"
               rel="noreferrer"
@@ -115,7 +115,7 @@ export default function Footer() {
               <FaInstagram className="w-6 h-6 md:w-full" />
             </a>
             <a
-              className="hover:text-orange-500 text-blue-500 p-2"
+              className="hover:text-primary-200 text-primary p-2"
               href="https://www.facebook.com/kgteknoloji"
               target="_blank"
               rel="noreferrer"
@@ -123,7 +123,7 @@ export default function Footer() {
               <FaFacebook className="w-6 h-6" />
             </a>
             <a
-              className="hover:text-orange-500 text-blue-500 p-2"
+              className="hover:text-primary-200 text-primary p-2"
               href="https://twitter.com/kgteknoloji"
               target="_blank"
               rel="noreferrer"
