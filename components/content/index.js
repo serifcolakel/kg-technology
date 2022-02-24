@@ -13,6 +13,7 @@ import {
 } from "react-icons/md";
 import Services from "./Services";
 import Content from "./Content";
+
 export default function Home() {
   const [services, setServices] = useState("1");
   return (
@@ -33,7 +34,7 @@ export default function Home() {
             </div>
             <div
               onClick={() => setServices("0")}
-              className="absolute top-0 left-40 md:left-44 bg-white border-blue-600 border-2 shadow-2xl animate-pulse cursor-pointer rounded-full items-center p-4"
+              className="absolute top-4 md:top-4 z-40 right-32 md:right-44 bg-white border-blue-600 border-2 shadow-2xl animate-pulse cursor-pointer rounded-full items-center p-4"
             >
               <HiOutlineDesktopComputer
                 className=" text-blue-500 bg-white shadow-2xl p-2 rounded-full"
@@ -42,7 +43,7 @@ export default function Home() {
             </div>
             <div
               onClick={() => setServices("1")}
-              className="absolute top-8 md:top-16 left-16 bg-white border-blue-600 border-2 shadow-2xl animate-pulse cursor-pointer rounded-full items-center p-4"
+              className="absolute top-12 md:top-16 left-16 bg-white border-blue-600 border-2 shadow-2xl animate-pulse cursor-pointer rounded-full items-center p-4"
             >
               <SiMinetest
                 className=" text-blue-500  bg-white shadow-2xl p-2 rounded-full"
@@ -60,7 +61,7 @@ export default function Home() {
             </div>
             <div
               onClick={() => setServices("3")}
-              className="absolute left-40 md:left-44 bottom-4 bg-white border-blue-600 border-2 shadow-2xl animate-pulse cursor-pointer rounded-full items-center p-4"
+              className="absolute right-32 md:right-44 z-40 bottom-4 bg-white border-blue-600 border-2 shadow-2xl animate-pulse cursor-pointer rounded-full items-center p-4"
             >
               <FaProjectDiagram
                 className=" text-blue-500 bg-white shadow-2xl p-2 rounded-full"
@@ -69,7 +70,7 @@ export default function Home() {
             </div>
             <div
               onClick={() => setServices("4")}
-              className="absolute right-4 bottom-40 md:bottom-48 bg-white border-blue-600 border-2 shadow-2xl animate-pulse cursor-pointer rounded-full items-center p-4"
+              className="absolute right-4 bottom-40 md:bottom-[182px] bg-white border-blue-600 border-2 shadow-2xl animate-pulse cursor-pointer rounded-full items-center p-4"
             >
               <MdOutlineSupportAgent
                 className=" text-blue-500 bg-white shadow-2xl p-2 rounded-full"
@@ -96,7 +97,7 @@ export default function Home() {
             </div>
             <div
               onClick={() => setServices("7")}
-              className="absolute top-8 md:top-16 right-8 md:right-16 bg-white border-blue-600 border-2 shadow-2xl animate-pulse cursor-pointer rounded-full items-center p-4"
+              className="absolute top-16 md:top-16 right-8 md:right-16 bg-white border-blue-600 border-2 shadow-2xl animate-pulse cursor-pointer rounded-full items-center p-4"
             >
               <MdIntegrationInstructions
                 className=" text-blue-500 bg-white shadow-2xl p-2 rounded-full"

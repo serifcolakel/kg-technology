@@ -24,6 +24,7 @@ export default function ResponseMenu(props) {
           </div>
           <Transition
             show={i === openedTab}
+            className=""
             enter="transition duration-1000 ease-out"
             enterFrom="transform scale-95 opacity-0"
             enterTo="transform scale-100 opacity-100"
@@ -34,7 +35,7 @@ export default function ResponseMenu(props) {
             {i === openedTab &&
               x.rows.map((r, j) => (
                 <a href={r.titleUrl} key={j} rel="noreferrer" target="_blank">
-                  <p className="text-sm	hover:text-orange-500">{r.title}</p>
+                  <p className="text-sm	hover:text-orange-500 ml-2">{r.title}</p>
                 </a>
               ))}
           </Transition>
