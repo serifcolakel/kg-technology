@@ -1,29 +1,27 @@
 export const navLink = [
   { name: "Anasayfa", url: "/" },
   {
-    name: "Hakkımızda",
+    name: "Hizmetler & Çözümler",
     url: "/",
   },
   {
     name: "Çalışma Modelleri",
     url: "/",
   },
-  { name: "Ar&Ge Projemiz", url: "/arge-projelerimi" },
-  { name: "Referanslar", url: "/referanslar" },
+  { name: "Ar&Ge Projemiz", url: "/arge-projects" },
+  { name: "Referanslar", url: "#referanslar" },
 ];
 export const hakkimizdaAltLink = [
   { name: "Yazılım Geliştirme", url: "/yazilim-gelistirme" },
   { name: "Test Mühendisliği", url: "/test-mühendisliği" },
   { name: "İş ve Sistem Analizi", url: "/is-sistem-analizi" },
   { name: "Proje Yönetimi", url: "/proje-yonetimi" },
-
   { name: "Operasyon Destek", url: "/operasyon-destek" },
   {
     name: "Sürüm - Konfigürasyon Yönetimi",
     url: "/surum-konfigurasyon-yonetimi",
   },
   { name: "Kurumsal Mimari", url: "/kurumsal-mimari" },
-
   { name: "Sistem Entegrasyon", url: "/sistem-entegrasyon" },
 ];
 export const calismaModelleriAltLink = [
@@ -98,65 +96,164 @@ export const SliderData = [
 ];
 
 export const links = [
-    { name: "Hakkımızda", href: "/hakkimizda" },
-    { name: "İK", href: "/ik" },
-    { name: "İletişim", href: "/iletisim" },
-  ];
+  { name: "Hakkımızda", href: "/hakkimizda" },
+  { name: "İK", href: "/ik" },
+  { name: "İletişim", href: "/iletisim" },
+];
 
-  export const data = {
-    links: [
-      {
-        webUrl: "/",
-        imgUrl: "http://www.kgteknoloji.com/images/logo.png",
-      },
-    ],
-    content: [
-      {
-        title: "Hakkımızda",
-        rows: [
-          { title: "Yazılım Geliştirme", titleUrl: "/yazilim-gelistirme" },
-          { title: "Test Mühendisliği", titleUrl: "/test-mühendisliği" },
-          { title: "İş ve Sistem Analizi", titleUrl: "/is-sistem-analizi" },
-          { title: "Proje Yönetimi", titleUrl: "/proje-yonetimi" },
-  
-          { title: "Operasyon Destek", titleUrl: "/operasyon-destek" },
-          {
-            title: "Sürüm - Konfigürasyon Yönetimi",
-            titleUrl: "/surum-konfigurasyon-yonetimi",
-          },
-          { title: "Kurumsal Mimari", titleUrl: "/kurumsal-mimari" },
-  
-          { title: "Sistem Entegrasyon", titleUrl: "/sistem-entegrasyon" },
-        ],
-      },
-      {
-        title: "Çalışma Modelleri",
-        rows: [
-          {
-            title: "KPI Bazlı Yönetilen Hizmetler",
-            titleUrl: "/kpi-bazli-yonetilen-hizmetler",
-          },
-          { title: "Proje Bazlı Hizmetler", titleUrl: "/proje-bazli-hizmetler" },
-          { title: "Dış Kaynak Hizmetleri", titleUrl: "/dis-kaynak-hizmetleri" },
-          { title: "Danışmanlık", titleUrl: "/danismanlik" },
-        ],
-      },
-      {
-        title: "Bize Ulaşın",
-        rows: [
-          {
-            title: "İletişim",
-            titleUrl: "/iletisim",
-          },
-          {
-            title: "Referanslar",
-            titleUrl: "/referanslar",
-          },
-          {
-            title: "İnsan Kaynakları",
-            titleUrl: "/ik",
-          },
-        ],
-      },
-    ],
-  };
+export const data = {
+  links: [
+    {
+      webUrl: "/",
+      imgUrl: "http://www.kgteknoloji.com/images/logo.png",
+    },
+  ],
+  content: [
+    {
+      title: "Hakkımızda",
+      rows: [
+        { title: "Yazılım Geliştirme", titleUrl: "/yazilim-gelistirme" },
+        { title: "Test Mühendisliği", titleUrl: "/test-mühendisliği" },
+        { title: "İş ve Sistem Analizi", titleUrl: "/is-sistem-analizi" },
+        { title: "Proje Yönetimi", titleUrl: "/proje-yonetimi" },
+
+        { title: "Operasyon Destek", titleUrl: "/operasyon-destek" },
+        {
+          title: "Sürüm - Konfigürasyon Yönetimi",
+          titleUrl: "/surum-konfigurasyon-yonetimi",
+        },
+        { title: "Kurumsal Mimari", titleUrl: "/kurumsal-mimari" },
+
+        { title: "Sistem Entegrasyon", titleUrl: "/sistem-entegrasyon" },
+      ],
+    },
+    {
+      title: "Çalışma Modelleri",
+      rows: [
+        {
+          title: "KPI Bazlı Yönetilen Hizmetler",
+          titleUrl: "/kpi-bazli-yonetilen-hizmetler",
+        },
+        { title: "Proje Bazlı Hizmetler", titleUrl: "/proje-bazli-hizmetler" },
+        { title: "Dış Kaynak Hizmetleri", titleUrl: "/dis-kaynak-hizmetleri" },
+        { title: "Danışmanlık", titleUrl: "/danismanlik" },
+      ],
+    },
+    {
+      title: "Bize Ulaşın",
+      rows: [
+        {
+          title: "İletişim",
+          titleUrl: "/iletisim",
+        },
+        {
+          title: "Referanslar",
+          titleUrl: "#referanslar",
+        },
+        {
+          title: "İnsan Kaynakları",
+          titleUrl: "/ik",
+        },
+      ],
+    },
+  ],
+};
+
+export const referencesImages = [
+  {
+    imgUrl: "https://i.hizliresim.com/7vhbqta.png",
+    imgAlt: "Aksa",
+  },
+  {
+    imgUrl: "https://i.hizliresim.com/92dvrjc.png",
+    imgAlt: "BTK",
+  },
+  {
+    imgUrl: "https://i.hizliresim.com/b5vdrq9.png",
+    imgAlt: "Gittigidiyor",
+  },
+  {
+    imgUrl: "https://i.hizliresim.com/l8wxs9z.png",
+    imgAlt: "Hepsiburada",
+  },
+  {
+    imgUrl: "https://i.hizliresim.com/fbysqu2.png",
+    imgAlt: "Kliksa",
+  },
+  {
+    imgUrl: "https://i.hizliresim.com/rqs2237.png",
+    imgAlt: "Millenicom",
+  },
+  {
+    imgUrl: "https://i.hizliresim.com/o6avbj6.jfif",
+    imgAlt: "Sbmerkezi",
+  },
+  {
+    imgUrl: "https://i.hizliresim.com/3qe3ehc.png",
+    imgAlt: "TEB",
+  },
+  {
+    imgUrl: "https://i.hizliresim.com/jtxda89.jfif",
+    imgAlt: "sbgozetimmerkezi",
+  },
+  {
+    imgUrl: "https://i.hizliresim.com/1d8m2qc.png",
+    imgAlt: "Turk Telekom",
+  },
+  {
+    imgUrl: "https://i.hizliresim.com/3uegx5v.png",
+    imgAlt: "THY",
+  },
+  {
+    imgUrl: "https://i.hizliresim.com/axfuxwh.png",
+    imgAlt: "Turkcell global Bilgi",
+  },
+  {
+    imgUrl: "https://i.hizliresim.com/3jbbxi8.png",
+    imgAlt: "Turkcell Superonline",
+  },
+  {
+    imgUrl: "https://i.hizliresim.com/8jiokty.png",
+    imgAlt: "Turkcell TEknoloji",
+  },
+  {
+    imgUrl: "https://i.hizliresim.com/afvg8n9.jpg",
+    imgAlt: "Turkcell",
+  },
+  {
+    imgUrl: "https://i.hizliresim.com/5mf9pgc.png",
+    imgAlt: "Yapı Kredi",
+  },
+];
+
+export const projects = [
+  {
+    imgUrl: "http://www.kgteknoloji.com/images/icon/fatura.png",
+    title: "Akıllı Şehir ve Akıllı Toplum Projesi",
+    subtitle: "Trafik - ITS Konut - Enerji",
+    url: "/kpi-bazli-yonetilen-hizmetler",
+    description:
+      "Akıllı Kavşak Yönetimi, 112 Araç Yönetimi - İtfaiye, Ambulans, Polis, Akıllı Belediye Otobüs Uygulaması ve Akıllı Taksi Yönetim Uygulaması olarak kullanılmaktadır.",
+  },
+  {
+    imgUrl: "http://www.kgteknoloji.com/images/img/proje-bazli-hizmetler.png",
+    title: "Diva (Dosya İndeksli Veri Ambarı) Projesi",
+    subtitle: "Big Data",
+
+    description:
+      "Büyük veri yönetiminde yaşanan sorunlara çözüm olmak üzere standart donanımlarla çalışan ileri teknoloji bir ara katman yazılımı geliştirmektir. Büyük verisi olan her kuruluşa hizmet verebileceği gibi, tek başına bulut hizmeti olarak da kullanılabilecektir.",
+    altDescription:
+      "Büyük verilerin yönetilebilmesi için halen kullanılan Hadoop, Azure, Hana, Amazon ve Google’ın özel çözümleri gibi farklı kaynaklardan gelen ilişkisel, yapısal ve yapısal olmayan her türlü (text, resim, ses, video ve yapısal) büyük verileri oracle, sql server, mysql gibi veri tabanlarına ihtiyaç duymadan standart donanımlarla web tabanlı bir ara yüzle rahatça yönetilebilen bir sistemdir.",
+  },
+  {
+    imgUrl: "http://www.kgteknoloji.com/images/img/dis-kaynak.png",
+    title:
+      "Aka (Açık Kaynak Analizi) Projesi / Social Network, Speech Behavioural and Text Analytics",
+    subtitle: "Acik Kaynak Analizi",
+
+    description:
+      "Açık kaynaklardan elde edilen verilerin önce insan sonra makine öğrenmesi ile analize tabi tutularak tavsiyelerde bulunan otomasyona dönüşmüş yazılımdır.",
+    altDescription:
+      "- Farklı diller için uygulama (Türkçe, İngilizce, Arapça, Rusça, Çince; IVR, CC, İnternet ve Sosyal Medyadan toplanan veride semantik analiz; Sözlük temelli indeks ve dosya içerik sorgulama; Sözlük cümle, deyim ve kelimelerde (olumlu/olumsuz, nötr) tespiti; Telefon üzerinden davranışsal tespit; Sözlük temelinin makine öğrenmesine aktarılmasını içerir.",
+  },
+];

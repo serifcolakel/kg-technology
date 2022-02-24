@@ -14,11 +14,11 @@ import {
 import Services from "./Services";
 import Content from "./Content";
 
-export default function Home() {
+export default function Home({ show }) {
   const [services, setServices] = useState("1");
   return (
     <div className={styles.content}>
-      <Content />
+      {show && <Content />}
       <div className="w-full mx-auto bg-[#eff3fb] py-12">
         <h1 className="text-center text-3xl font-bold text-blue-500 hover:text-orange-400">
           Servislerimiz

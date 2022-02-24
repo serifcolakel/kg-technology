@@ -30,6 +30,7 @@ export default function Content() {
             imgUrl={"http://www.kgteknoloji.com/images/icon/fatura.png"}
             title={"Faturalama ve Ücretlendirme"}
             top={" md:mt-20"}
+            buttonShow={false}
           />
           <Card
             imgUrl={
@@ -37,21 +38,25 @@ export default function Content() {
             }
             title={"Müşteri İlişkileri ve Yönetimi"}
             top={" md:mt-4"}
+            buttonShow={false}
           />
           <Card
             imgUrl={"http://www.kgteknoloji.com/images/icon/is-zekasi.png"}
             title={"İş Zekası"}
             top={" md:mt-20"}
+            buttonShow={false}
           />
           <Card
             imgUrl={"http://www.kgteknoloji.com/images/icon/ara-katman.png"}
             title={"Ara Katman"}
             top={" md:mt-4"}
+            buttonShow={false}
           />
           <Card
             imgUrl={"http://www.kgteknoloji.com/images/icon/katma-deger.png"}
             title={"Katma Değerli Servisler"}
             top={" md:mt-20"}
+            buttonShow={false}
           />
         </div>
       </div>

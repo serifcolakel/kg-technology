@@ -34,7 +34,7 @@ export default function ResponseMenu(props) {
           >
             {i === openedTab &&
               x.rows.map((r, j) => (
-                <a href={r.titleUrl} key={j} rel="noreferrer" target="_blank">
+                <a href={r.titleUrl} key={j} rel="noreferrer">
                   <p className="text-sm	hover:text-orange-500 ml-2">{r.title}</p>
                 </a>
               ))}

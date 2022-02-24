@@ -4,7 +4,7 @@ import HeaderTop from "./HeaderTop";
 import styles from "../../styles/Home.module.scss";
 import Header from "./Header";
 import { useRouter } from "next/router";
-export default function Home() {
+export default function Home({ position }) {
   const router = useRouter();
   const show = router.pathname === "/";
 
@@ -12,7 +12,7 @@ export default function Home() {
     <header className="relative">
       <HeaderTop />
       <div className={styles.sliders}>
-        <Header show={show} />
+        <Header show={show} position={position} />
         {show ? <Slider show={1} /> : null}
       </div>
     </header>
