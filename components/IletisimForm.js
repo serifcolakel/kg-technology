@@ -67,7 +67,7 @@ export default function IletisimForm() {
       )}
       <button
         type="submit"
-        className="w-full bg-primary text-white font-bold py-2 px-4 rounded-lg"
+        className="w-full bg-primary text-white hover:bg-white hover:text-primary hover:border-[1px] hover:border-primary font-bold py-2 px-4 rounded-lg"
       >
         Gönder
       </button>

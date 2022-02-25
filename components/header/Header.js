@@ -5,6 +5,8 @@ import { MdMenuOpen } from "react-icons/md";
 import ResponseMenu from "../ResponseMenu";
 import { calismaModelleriAltLink, hakkimizdaAltLink, navLink } from "../Data";
 import { useRouter } from "next/router";
+import { AiOutlineClose } from "react-icons/ai";
+import IletisimForm from "../IletisimForm";
 export default function Header({ show, position }) {
   let mainClassName =
     "w-full md:px-6 px-4 top-0 z-50 flex flex-row items-center justify-between";
@@ -21,7 +23,7 @@ export default function Header({ show, position }) {
   const [showResponsiveMenu, setShowResponsiveMenu] = React.useState(false);
   const router = useRouter();
   const page = router.pathname === "/";
-
+  const [showModal, setShowModal] = React.useState(false);
   return (
     <div className={mainClassName}>
       <Link href="/">
@@ -96,10 +98,26 @@ export default function Header({ show, position }) {
             )}
           </div>
         ))}
-        <button className="text-orange-500 border-[1px] bg-black px-4 py-2">
+        <button
+          onClick={() => setShowModal(!showModal)}
+          className="text-primary border-[1px] border-primary rounded-xl font-bold bg-white hover:border-white hover:bg-primary hover:text-white px-4 py-2"
+        >
           Daha Fazlası
         </button>
       </div>
+      {showModal && (
+        <div className="fixed h-[100vh] w-full flex items-center justify-center left-0 top-0 bg-[#000000cc] ">
+          <div className="w-[30%] h-[60%] mx-auto bg-white opacity-100 flex flex-col gap-y-8 rounded-xl bg-modal-bg bg-no-repeat bg-right bg-cover">
+            <AiOutlineClose
+              onClick={() => setShowModal(!showModal)}
+              className="mr-4 mt-4 ml-auto text-primary-300 hover:text-red-600 hover:scale-125 cursor-pointer"
+              size={35}
+            />
+            <p className="font-bold text-xl text-center">Bize Ulaşın</p>
+            <IletisimForm />
+          </div>
+        </div>
+      )}
       <div
         onClick={() => setShowResponsiveMenu(!showResponsiveMenu)}
         className="md:hidden text-white block"

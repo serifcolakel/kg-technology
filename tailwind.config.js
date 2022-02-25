@@ -23,6 +23,7 @@ module.exports = {
     },
     backgroundImage: (theme) => ({
       "content-bg": "url('https://www.kgteknoloji.com/images/img/hcg.png')",
+      "modal-bg":"url('https://i.hizliresim.com/ejv8s0l.png')",
     }),
   },
   plugins: [require("@tailwindcss/line-clamp")],
