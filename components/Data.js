@@ -105,7 +105,7 @@ export const data = {
   links: [
     {
       webUrl: "/",
-      imgUrl: "http://www.kgteknoloji.com/images/logo.png",
+      imgUrl: "https://www.kgteknoloji.com/images/logo.png",
     },
   ],
   content: [
@@ -228,7 +228,7 @@ export const referencesImages = [
 
 export const projects = [
   {
-    imgUrl: "http://www.kgteknoloji.com/images/icon/fatura.png",
+    imgUrl: "https://www.kgteknoloji.com/images/icon/fatura.png",
     title: "Akıllı Şehir ve Akıllı Toplum Projesi",
     subtitle: "Trafik - ITS Konut - Enerji",
     url: "/kpi-bazli-yonetilen-hizmetler",
@@ -236,7 +236,7 @@ export const projects = [
       "Akıllı Kavşak Yönetimi, 112 Araç Yönetimi - İtfaiye, Ambulans, Polis, Akıllı Belediye Otobüs Uygulaması ve Akıllı Taksi Yönetim Uygulaması olarak kullanılmaktadır.",
   },
   {
-    imgUrl: "http://www.kgteknoloji.com/images/img/proje-bazli-hizmetler.png",
+    imgUrl: "https://www.kgteknoloji.com/images/img/proje-bazli-hizmetler.png",
     title: "Diva (Dosya İndeksli Veri Ambarı) Projesi",
     subtitle: "Big Data",
 
@@ -246,7 +246,7 @@ export const projects = [
       "Büyük verilerin yönetilebilmesi için halen kullanılan Hadoop, Azure, Hana, Amazon ve Google’ın özel çözümleri gibi farklı kaynaklardan gelen ilişkisel, yapısal ve yapısal olmayan her türlü (text, resim, ses, video ve yapısal) büyük verileri oracle, sql server, mysql gibi veri tabanlarına ihtiyaç duymadan standart donanımlarla web tabanlı bir ara yüzle rahatça yönetilebilen bir sistemdir.",
   },
   {
-    imgUrl: "http://www.kgteknoloji.com/images/img/dis-kaynak.png",
+    imgUrl: "https://www.kgteknoloji.com/images/img/dis-kaynak.png",
     title:
       "Aka (Açık Kaynak Analizi) Projesi / Social Network, Speech Behavioural and Text Analytics",
     subtitle: "Acik Kaynak Analizi",

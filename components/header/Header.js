@@ -27,7 +27,7 @@ export default function Header({ show, position }) {
       <Link href="/">
         <a>
           <img
-            src="http://www.kgteknoloji.com/images/logo.png"
+            src="https://www.kgteknoloji.com/images/logo.png"
             alt="logo"
             className="md:w-[375px] md:h-[75px] w-[135px] h-12 object-contain my-2"
           />
@@ -116,7 +116,7 @@ export default function Header({ show, position }) {
             <Link href="/">
               <a>
                 <img
-                  src="http://www.kgteknoloji.com/images/logo.png"
+                  src="https://www.kgteknoloji.com/images/logo.png"
                   alt="logo"
                   className="md:w-[375px] md:h-[75px] w-[135px] h-12 object-contain  mx-auto my-2"
                 />

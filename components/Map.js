@@ -13,7 +13,7 @@ export default function Map() {
         <Link href="/">
           <a>
             <img
-              src="http://www.kgteknoloji.com/images/logo.png"
+              src="https://www.kgteknoloji.com/images/logo.png"
               alt="logo"
               className="bg-gray-600 p-4 rounded-md w-[150px]"
             />

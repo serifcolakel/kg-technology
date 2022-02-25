@@ -6,7 +6,7 @@ export default function Content() {
   return (
     <div>
       <img
-        src="http://www.kgteknoloji.com/images/img/hcg.png"
+        src="https://www.kgteknoloji.com/images/img/hcg.png"
         alt="hcg"
         className="w-full md:w-[50%] h-[120px] mx-auto object-contain"
       />
@@ -27,33 +27,33 @@ export default function Content() {
         </p>
         <div className="grid grid-cols-1 md:grid-cols-5 w-full p-4 md:w-[70%] gap-4 mb-12 ">
           <Card
-            imgUrl={"http://www.kgteknoloji.com/images/icon/fatura.png"}
+            imgUrl={"https://www.kgteknoloji.com/images/icon/fatura.png"}
             title={"Faturalama ve Ücretlendirme"}
             top={" md:mt-20"}
             buttonShow={false}
           />
           <Card
             imgUrl={
-              "http://www.kgteknoloji.com/images/icon/musteri-iliskileri.png"
+              "https://www.kgteknoloji.com/images/icon/musteri-iliskileri.png"
             }
             title={"Müşteri İlişkileri ve Yönetimi"}
             top={" md:mt-4"}
             buttonShow={false}
           />
           <Card
-            imgUrl={"http://www.kgteknoloji.com/images/icon/is-zekasi.png"}
+            imgUrl={"https://www.kgteknoloji.com/images/icon/is-zekasi.png"}
             title={"İş Zekası"}
             top={" md:mt-20"}
             buttonShow={false}
           />
           <Card
-            imgUrl={"http://www.kgteknoloji.com/images/icon/ara-katman.png"}
+            imgUrl={"https://www.kgteknoloji.com/images/icon/ara-katman.png"}
             title={"Ara Katman"}
             top={" md:mt-4"}
             buttonShow={false}
           />
           <Card
-            imgUrl={"http://www.kgteknoloji.com/images/icon/katma-deger.png"}
+            imgUrl={"https://www.kgteknoloji.com/images/icon/katma-deger.png"}
             title={"Katma Değerli Servisler"}
             top={" md:mt-20"}
             buttonShow={false}

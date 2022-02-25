@@ -16,7 +16,7 @@ export default function InsanKaynaklari() {
       <div className="w-full md:w-[70%] mx-auto flex flex-col gap-y-8 md:p-0 p-4 md:py-12">
         <div className="w-full flex flex-col items-start md:flex-row justify-between md:full md:divide-x-2 gap-y-4 8">
           <img
-            src="http://www.kgteknoloji.com/images/img/ik.png"
+            src="https://www.kgteknoloji.com/images/img/ik.png"
             alt="ik"
             className="md:w-[20%] h-[200px] md:h-[300px]"
           />
@@ -78,11 +78,16 @@ export default function InsanKaynaklari() {
               Özgeçmişinizi Gönderin;
             </h3>
             <p className="font-bold text-xl text-gray-500">Ad Soyad</p>
-            <input type="text" className={styles.input} />
+            <input type="text" name="fullName" className={styles.input} />
             <p className="font-bold text-xl text-gray-500">E-Posta</p>
-            <input type="text" className={styles.input} />
+            <input type="email" name="email" className={styles.input} />
             <p className="font-bold text-xl text-gray-500">Mesaj</p>
-            <textarea className={styles.input} rows="5" cols="50"></textarea>
+            <textarea
+              className={styles.input}
+              name="message"
+              rows="5"
+              cols="50"
+            ></textarea>
             <p className="font-bold text-xl text-gray-500">CV</p>
             <input type="file" className="w-full border-gray-300" />
             <button className="w-full bg-primary text-white font-bold py-2 px-4 rounded-lg">

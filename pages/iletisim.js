@@ -2,6 +2,7 @@ import Head from "next/head";
 import React from "react";
 import Footer from "../components/Footer";
 import Header from "../components/header/Header";
+import IletisimForm from "../components/IletisimForm";
 import Map from "../components/Map";
 
 export default function Iletisim() {
@@ -13,6 +14,7 @@ export default function Iletisim() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header position={false} />
+
       <div className="w-full md:w-[70%] mx-auto flex flex-col gap-y-8 md:p-0 p-4">
         <h1 className="text-xl md:text-3xl font-bold text-primary">
           KG Bilgi İşlem Teknoloji A.Ş.
@@ -51,7 +53,7 @@ export default function Iletisim() {
           info@kgteknoloji.com
         </a>
       </div>
-
+      <IletisimForm />
       <Map />
       <Footer />
     </div>

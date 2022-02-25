@@ -22,7 +22,7 @@ module.exports = {
       },
     },
     backgroundImage: (theme) => ({
-      "content-bg": "url('http://www.kgteknoloji.com/images/img/hcg.png')",
+      "content-bg": "url('https://www.kgteknoloji.com/images/img/hcg.png')",
     }),
   },
   plugins: [require("@tailwindcss/line-clamp")],
